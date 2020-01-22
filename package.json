@@ -1,0 +1,36 @@
+{
+  "name": "typescript-package-template",
+  "version": "0.0.1",
+  "description": "<DESCRIPTION>",
+  "keywords": [],
+  "homepage": "https://github.com/<OWNER>/<REPO>",
+  "bugs": {
+    "url": "https://github.com/<OWNER>/<REPO>/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "<NAME>",
+    "email": "<EMAIL (optional)>",
+    "url": "<URL (optional)>"
+  },
+  "files": [
+    "lib/"
+  ],
+  "main": "./lib/main.js",
+  "types": "./lib/main.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<OWNER>/<REPO>.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "prepublishOnly": "npm test",
+    "start": "node ./lib/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testpack": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
+  },
+  "devDependencies": {
+    "typescript": "3.8.3"
+  }
+}
