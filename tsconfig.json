@@ -12,12 +12,6 @@
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "lib",
-    "node_modules",
-    "src/**/*.spec.ts"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["lib", "node_modules", "src/**/*.spec.ts"]
 }
