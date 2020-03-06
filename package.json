@@ -24,9 +24,9 @@
   },
   "scripts": {
     "build": "tsc",
+    "format": "prettier --write \"**/*.{js,json,ts}\"",
     "lint": "npx eslint '**/*.{js,ts}'",
     "prepublishOnly": "tsc && npm test",
-    "prettier": "prettier --write \"**/*.{js,json,ts}\"",
     "start": "node ./lib/main.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "testpack": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
