@@ -6,7 +6,9 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended'
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:jest/recommended',
+    'plugin:jest/style'
   ],
   globals: {
     Atomics: 'readonly',
@@ -17,7 +19,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module'
   },
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'jest'],
   rules: {
     // Possible Errors
     'no-await-in-loop': 'error',
@@ -76,7 +78,7 @@ module.exports = {
     yoda: ['error', 'never', {exceptRange: true}],
 
     // Variables
-    'no-restricted-globals': ['error', 'event', 'fdescribe', 'fit'],
+    'no-restricted-globals': ['error', 'event'],
     'no-shadow': 'error',
     'no-undef-init': 'error',
     'no-undefined': 'error',
