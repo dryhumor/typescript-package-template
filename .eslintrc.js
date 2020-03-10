@@ -2,11 +2,13 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    jasmine: true,
     node: true
   },
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended'
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:jasmine/recommended'
   ],
   globals: {
     Atomics: 'readonly',
@@ -17,7 +19,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module'
   },
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'jasmine'],
   rules: {
     // Possible Errors
     'no-await-in-loop': 'error',
