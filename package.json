@@ -26,12 +26,14 @@
     "build": "tsc",
     "format": "prettier --write \"**/*.{js,json,ts}\"",
     "lint": "npx eslint '**/*.{js,ts}'",
-    "prepublishOnly": "tsc && npm test",
+    "prepublishOnly": "tsc && npm testfull",
     "start": "node ./lib/main.js",
-    "test": "jasmine",
+    "test": "ts-node --transpile-only node_modules/jasmine/bin/jasmine",
+    "testfull": "ts-node node_modules/jasmine/bin/jasmine",
     "testpack": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
   },
   "devDependencies": {
+    "@types/jasmine": "3.5.9",
     "@typescript-eslint/eslint-plugin": "2.23.0",
     "@typescript-eslint/parser": "2.23.0",
     "eslint": "6.8.0",
@@ -40,6 +42,7 @@
     "jasmine": "3.5.0",
     "lint-staged": "10.0.8",
     "prettier": "1.19.1",
+    "ts-node": "8.6.2",
     "typescript": "3.8.3"
   }
 }
