@@ -25,7 +25,7 @@
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"**/*.{js,json,ts}\"",
-    "lint": "npx eslint '**/*.{js,ts}'",
+    "lint": "eslint '**/*.{js,ts}'",
     "prepublishOnly": "tsc && npm testfull",
     "start": "node ./lib/main.js",
     "test": "ts-node --transpile-only node_modules/jasmine/bin/jasmine",
