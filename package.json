@@ -32,6 +32,7 @@
     "testpack": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
   },
   "devDependencies": {
+    "@types/node": "13.9.0",
     "@typescript-eslint/eslint-plugin": "2.23.0",
     "@typescript-eslint/parser": "2.23.0",
     "eslint": "6.8.0",
