@@ -1,6 +1,6 @@
-const assert = require('assert');
+import * as assert from 'assert';
 
-const main = require('../lib/main');
+import * as main from '../src/main';
 
 describe('main', () => {
   describe('.greet()', () => {
