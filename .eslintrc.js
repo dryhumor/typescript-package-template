@@ -83,6 +83,7 @@ module.exports = {
     'no-shadow': 'error',
     'no-undef-init': 'error',
     'no-undefined': 'error',
+    'no-use-before-define': ['error', {functions: false}],
 
     // Nodes.js and CommonJS
     'callback-return': 'error',
@@ -112,8 +113,10 @@ module.exports = {
     'prefer-spread': 'error',
     'prefer-template': 'error',
     'rest-spread-spacing': 'error',
-    'sort-imports': ['error', {ignoreCase: true}],
     'symbol-description': 'error',
-    'template-curly-spacing': 'error'
+    'template-curly-spacing': 'error',
+
+    // TypeScript
+    '@typescript-eslint/no-use-before-define': ['error', {functions: false}]
   }
 };
