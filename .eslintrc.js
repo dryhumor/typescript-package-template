@@ -27,6 +27,7 @@ module.exports = {
   rules: {
     // Possible Errors
     'no-await-in-loop': 'error',
+    'no-extra-semi': 'off', // let Prettier handle formatting
     'require-atomic-updates': 'error',
 
     // Best Practices
