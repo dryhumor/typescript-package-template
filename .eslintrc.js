@@ -3,25 +3,25 @@ module.exports = {
     browser: true,
     es6: true,
     jasmine: true,
-    node: true
+    node: true,
   },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:jasmine/recommended'
+    'plugin:jasmine/recommended',
   ],
   globals: {
     Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly'
+    SharedArrayBuffer: 'readonly',
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
     tsconfigRootDir: __dirname,
-    project: ['./tsconfig-lint.json']
+    project: ['./tsconfig-lint.json'],
   },
   plugins: ['@typescript-eslint', 'jasmine'],
   rules: {
@@ -121,6 +121,6 @@ module.exports = {
     'template-curly-spacing': 'error',
 
     // TypeScript
-    '@typescript-eslint/no-use-before-define': ['error', {functions: false}]
-  }
+    '@typescript-eslint/no-use-before-define': ['error', {functions: false}],
+  },
 };
