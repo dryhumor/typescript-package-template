@@ -1,4 +1,4 @@
-import {greet} from '../src/main';
+import {greet} from '../src/index';
 
 describe('greet', () => {
   it('says hello with enthusiasm', () => {

@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - README.md
 - package-lock.json
 - package.json
-- src/main.ts
+- src/index.ts
 - tsconfig.json
 
 [Unreleased]: https://github.com/<OWNER>/<REPO>/compare/v0.0.1...HEAD

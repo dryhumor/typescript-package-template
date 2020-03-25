@@ -16,8 +16,8 @@
   "files": [
     "dist/"
   ],
-  "main": "./dist/main.js",
-  "types": "./dist/main.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/<OWNER>/<REPO>.git"
@@ -27,7 +27,7 @@
     "format": "prettier --write \"**/*.{js,json,ts}\"",
     "lint": "eslint '**/*.{js,ts}'",
     "prepublishOnly": "tsc && npm testfull",
-    "start": "node ./dist/main.js",
+    "start": "node ./dist/index.js",
     "test": "ts-node --transpile-only node_modules/jasmine/bin/jasmine",
     "testfull": "ts-node node_modules/jasmine/bin/jasmine",
     "testpack": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
