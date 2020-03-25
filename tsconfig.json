@@ -4,7 +4,7 @@
     "module": "commonjs",
     "lib": ["es2017", "es7", "es6", "dom"],
     "declaration": true,
-    "outDir": "lib",
+    "outDir": "dist",
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -13,5 +13,5 @@
     "esModuleInterop": true
   },
   "include": ["src/**/*"],
-  "exclude": ["lib", "node_modules", "spec"]
+  "exclude": ["dist", "node_modules", "spec"]
 }
