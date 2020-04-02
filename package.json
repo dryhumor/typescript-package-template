@@ -24,6 +24,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "buildall": "tsc --project tsconfig-all.json",
     "format": "prettier --write \"**/*.{js,json,ts}\"",
     "lint": "eslint '**/*.{js,ts}'",
     "prepublishOnly": "tsc && npm testfull",
