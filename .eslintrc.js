@@ -20,6 +20,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     tsconfigRootDir: __dirname,
     project: ['./tsconfig-all.json'],
   },
@@ -122,5 +123,6 @@ module.exports = {
 
     // TypeScript
     '@typescript-eslint/no-use-before-define': ['error', {functions: false}],
+    '@typescript-eslint/restrict-template-expressions': 'off',
   },
 };
