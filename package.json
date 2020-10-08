@@ -28,6 +28,7 @@
     "format": "prettier --write \"**/*.{js,json,ts}\"",
     "lint": "eslint '{spec,src}/**/*.{js,ts}' '*.{js,ts}'",
     "prepublishOnly": "tsc && npm testfull",
+    "qa": "npm run buildall && npm run lint && npm test",
     "start": "node ./dist/index.js",
     "test": "ts-node --transpile-only node_modules/jasmine/bin/jasmine",
     "testfull": "ts-node node_modules/jasmine/bin/jasmine",
