@@ -103,7 +103,7 @@ module.exports = {
     'no-sync': 'error',
 
     // ECMAScript 6
-    'arrow-parens': 'error',
+    'arrow-parens': ['error', 'as-needed'],
     'no-confusing-arrow': 'error',
     'no-duplicate-imports': 'error',
     'no-useless-computed-key': 'error',
