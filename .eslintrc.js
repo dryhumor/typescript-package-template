@@ -72,7 +72,7 @@ module.exports = {
     'no-useless-call': 'error',
     'no-useless-concat': 'error',
     'no-useless-return': 'error',
-    'no-void': 'error',
+    'no-void': ['error', {allowAsStatement: true}],
     'no-warning-comments': ['error', {terms: ['todo', 'fixme', 'refactor']}],
     'prefer-named-capture-group': 'error',
     'prefer-promise-reject-errors': 'error',
