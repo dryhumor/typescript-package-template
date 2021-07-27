@@ -90,18 +90,6 @@ module.exports = {
     'no-undefined': 'error',
     'no-use-before-define': ['error', {functions: false}],
 
-    // Nodes.js and CommonJS
-    'callback-return': 'error',
-    'global-require': 'error',
-    'handle-callback-err': 'error',
-    'no-buffer-constructor': 'error',
-    'no-mixed-requires': ['error', {allowCall: true}],
-    'no-new-require': 'error',
-    'no-path-concat': 'error',
-    'no-process-env': 'error',
-    'no-process-exit': 'error',
-    'no-sync': 'error',
-
     // ECMAScript 6
     'arrow-parens': ['error', 'as-needed'],
     'no-confusing-arrow': 'error',
