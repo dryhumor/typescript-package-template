@@ -27,6 +27,8 @@
     "buildall": "tsc --project tsconfig-all.json",
     "format": "prettier --write \"**/*.{js,json,ts}\"",
     "lint": "eslint '{spec,src}/**/*.{js,ts}' '*.{js,ts}'",
+    "pre-commit": "npm run buildall && lint-staged",
+    "prepare": "husky install",
     "prepublishOnly": "tsc && npm testfull",
     "qa": "npm run buildall && npm run lint && npm test",
     "start": "node ./dist/index.js",
